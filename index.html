@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="">
+    <h1>Contact Us</h1>
+
+    <div id="nome">
+      <label for="Primeiro_nome">First Name *</label>
+      <input type="text" id="Primeiro_nome" name="Primeiro_nome" required>
+
+      <label for="Segundo_nome">Last Name *</label>
+      <input type="text" id="Segundo_nome" name="Segundo_nome" required>
+    </div>
+
+    <div id="Email">
+      <label for="email">Email Address *</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <div id="Tipo_de_consulta">
+      <p>Query Type *</p>
+
+      <input type="radio" name="queryType" id="generalEnquiry" value="generalEnquiry">
+      <label for="generalEnquiry">General Enquiry</label>
+
+      <input type="radio" name="queryType" id="supportRequest" value="supportRequest">
+      <label for="supportRequest">Support Request</label>
+    </div>
+
+    <div id="mensagem">
+      <label for="mesage">Message *</label>
+      <textarea name="mesage" id="mesage"></textarea>
+    </div>
+
+    <div>
+      <input type="checkbox" name="confirma" id="confirma">
+      <label for="confirma">I consent to being contacted by the team *</label>
+    </div>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
