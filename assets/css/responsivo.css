@@ -1,0 +1,14 @@
+@media(max-width:1100px) {
+    #nome {
+        flex-wrap: wrap;
+    }
+    #nome section {
+        width: 100%;
+    }
+    #Tipo_de_consulta #seleciona_tipo {
+        flex-wrap: wrap;
+    }
+    #Tipo_de_consulta section {
+        width: 100%;
+    }
+}

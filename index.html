@@ -1,74 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/estilo.css">
+  <link rel="stylesheet" href="./assets/css/responsivo.css">
+  <title>Document</title>
 </head>
 
 <body>
-
-  <form action="">
+  <form action="" id="Formulario">
     <h1>Contact Us</h1>
 
     <div id="nome">
-      <label for="Primeiro_nome">First Name *</label>
-      <input type="text" id="Primeiro_nome" name="Primeiro_nome" required>
+      <section id="seu_primeiro_nome">
+        <label for="Primeiro_nome">First Name <span class="asterisco">*</span></label>
+        <input type="text" id="Primeiro_nome" name="Primeiro_nome" required>
+      </section>
 
-      <label for="Segundo_nome">Last Name *</label>
-      <input type="text" id="Segundo_nome" name="Segundo_nome" required>
+      <section id="seu_segundo_nome">
+        <label for="Segundo_nome">Last Name <span class="asterisco">*</span></label>
+        <input type="text" id="Segundo_nome" name="Segundo_nome" required>
+      </section>
     </div>
 
     <div id="Email">
-      <label for="email">Email Address *</label>
+      <label for="email">Email Address <span class="asterisco">*</span></label>
       <input type="email" name="email" id="email">
     </div>
 
     <div id="Tipo_de_consulta">
-      <p>Query Type *</p>
+      <p>Query Type <span class="asterisco">*</span></p>
 
-      <input type="radio" name="queryType" id="generalEnquiry" value="generalEnquiry">
-      <label for="generalEnquiry">General Enquiry</label>
+      <div id="seleciona_tipo">
+        <section>
+          <input type="radio" name="queryType" id="generalEnquiry" value="generalEnquiry">
+          <label for="generalEnquiry">General Enquiry</label>
+        </section>
 
-      <input type="radio" name="queryType" id="supportRequest" value="supportRequest">
-      <label for="supportRequest">Support Request</label>
+        <section>
+          <input type="radio" name="queryType" id="supportRequest" value="supportRequest">
+          <label for="supportRequest">Support Request</label>
+        </section>
+      </div>
     </div>
 
     <div id="mensagem">
-      <label for="mesage">Message *</label>
+      <label for="mesage">Message <span class="asterisco">*</span></label>
       <textarea name="mesage" id="mesage"></textarea>
     </div>
 
-    <div>
+    <div id="confirma">
       <input type="checkbox" name="confirma" id="confirma">
-      <label for="confirma">I consent to being contacted by the team *</label>
+      <label for="confirma">I consent to being contacted by the team <span class="asterisco">*</span></label>
     </div>
 
     <input type="submit" value="Enviar">
 
   </form>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>
