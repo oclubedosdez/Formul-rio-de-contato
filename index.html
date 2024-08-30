@@ -16,24 +16,27 @@
 </head>
 
 <body>
-  <form action="" id="Formulario">
+  <form id="Formulario">
     <h1>Contact Us</h1>
 
     <div id="nome">
       <section id="seu_primeiro_nome">
         <label for="Primeiro_nome">First Name <span class="asterisco">*</span></label>
-        <input type="text" id="Primeiro_nome" name="Primeiro_nome" required>
+        <input type="text" id="Primeiro_nome" name="Primeiro_nome">
+        <small class="error-message" id="error-primeiro-nome">First Name is required.</small>
       </section>
-
+  
       <section id="seu_segundo_nome">
         <label for="Segundo_nome">Last Name <span class="asterisco">*</span></label>
-        <input type="text" id="Segundo_nome" name="Segundo_nome" required>
+        <input type="text" id="Segundo_nome" name="Segundo_nome">
+        <small class="error-message" id="error-segundo-nome">Last Name is required.</small>
       </section>
     </div>
 
     <div id="Email">
       <label for="email">Email Address <span class="asterisco">*</span></label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" placeholder="example@gmail.com">
+      <small class="error-message" id="error-email">Please enter a valid email address.</small>
     </div>
 
     <div id="Tipo_de_consulta">
